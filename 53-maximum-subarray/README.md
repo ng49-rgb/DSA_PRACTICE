@@ -35,3 +35,7 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution using the <strong>divide and conquer</strong> approach, which is more subtle.</p>
+
+
+
+NOTE: due to edge cases like all -ves , if sum < 0 is checked before in flow control, it will return 0 i.e.can lead to incorrect ans
