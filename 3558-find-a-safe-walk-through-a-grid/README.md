@@ -60,3 +60,20 @@
 	<li><code>1 &lt;= health &lt;= m + n</code></li>
 	<li><code>grid[i][j]</code> is either 0 or 1.</li>
 </ul>
+
+
+
+| Syntax                         | Meaning                                                                       |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| `auto`                         | Compiler deduces the variable type automatically.                             |
+| `auto [a,b]`                   | Structured binding (unpacks a pair, tuple, or array into separate variables). |
+| `vector<vector<int>>`          | A 2D vector (vector of vectors).                                              |
+| `&`                            | Reference; avoids copying objects.                                            |
+| `{0,0}`                        | Brace initialization (initializer list).                                      |
+| `deque<pair<int,int>>`         | A deque storing `(row, column)` pairs.                                        |
+| `for(auto &x : container)`     | Range-based for loop iterating over each element by reference.                |
+| `container.size()`             | Returns the number of elements in the container.                              |
+| `container.empty()`            | Returns `true` if the container has no elements.                              |
+| `push_front()` / `push_back()` | Insert at the front or back of a deque.                                       |
+| `pop_front()`                  | Remove the front element of a deque.                                          |
+
