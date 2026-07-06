@@ -1,9 +1,9 @@
 // sort first and then check cover condition 
-// lets try better soln
+// lets try optimal soln
 class Solution {
 public:
     int removeCoveredIntervals(vector<vector<int>>& intervals) {
-     vector<vector<int>> res;
+    
      int n = intervals.size();
 
      auto lambda = [](vector<int>& vec1, vector<int>& vec2){
@@ -15,15 +15,16 @@ public:
 
      sort(begin(intervals), end(intervals), lambda);
 
-     res.push_back(intervals[0]);
+     int lastPosIndexNo = intervals[0][1];
+     int count = 1;
 
      for(int i=1; i<n; i++){
-        if(res.back()[1] >= intervals[i][1]){
+        if(lastPosIndexNo >= intervals[i][1]){
             continue;
         }
-        res.push_back(intervals[i]);
+        lastPosIndexNo = intervals[i][1];
+        count++;
      }
-
-     return res.size();
+     return count;
     }
 };
