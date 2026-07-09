@@ -42,6 +42,7 @@ public:
 
         DSU dsu(n);
 
+        // Connect adjacent indices if their difference <= maxDiff
         for (int i = 1; i < n; i++) {
             if (nums[i] - nums[i - 1] <= maxDiff) {
                 dsu.unite(i, i - 1);
