@@ -1,1 +1,2 @@
-# DSA_PRACTICE
+# DSA_PRACTICE 
+hi!
